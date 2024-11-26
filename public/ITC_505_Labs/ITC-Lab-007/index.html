@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Libs Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #4CAF50;
+    }
+    form {
+      margin-top: 20px;
+      max-width: 400px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mad Libs Game</h1>
+  <p>Fill out the form below to create your own story!</p>
+  <form action= "/ITC_505_Labs/ITC-Lab_007/" method="POST">
+    <label for="noun">Noun:</label>
+    <input type="text" id="noun" name="noun" required>
+  
+    <label for="verb">Verb:</label>
+    <input type="text" id="verb" name="verb" required>
+  
+    <label for="adjective">Adjective:</label>
+    <input type="text" id="adjective" name="adjective" required>
+  
+    <label for="pluralNoun">Plural Noun:</label>
+    <input type="text" id="pluralNoun" name="pluralNoun" required>
+  
+    <label for="adverb">Adverb:</label>
+    <input type="text" id="adverb" name="adverb" required>
+  
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
